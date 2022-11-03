@@ -5,12 +5,14 @@ const UserIcon = (props) => {
   const { watched } = props;
 
   return (
-    <button
+    <div
       className={watched ? "user-icon" : "user-icon user-icon_unwatched"}
-      onClick={""}
+      onClick={() => {}}
     >
-      <div className="user-icon__image"></div>
-    </button>
+      <button className="user-icon__border">
+        <div className="user-icon__image"></div>
+      </button>
+    </div>
   );
 };
 
