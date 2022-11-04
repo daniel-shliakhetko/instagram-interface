@@ -10,10 +10,7 @@ const Post = (props) => {
   return (
     <div className="post">
       <UserIcon />
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-      >
+      <Swiper spaceBetween={50} slidesPerView={1}>
         <SwiperSlide></SwiperSlide>
       </Swiper>
     </div>

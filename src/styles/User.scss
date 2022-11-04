@@ -1,16 +1,27 @@
-.stories-carousel{
-    .swiper-slide{
-        width:fit-content;
+$gray: #7e7d7d;
+$border: 1px solid #f4f4f4;
+
+.stories-carousel {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75em;
+    border-bottom: $border;
+
+    .swiper-slide {
+        width: fit-content;
     }
 }
 
 .user-icon {
-    padding:0.5rem;
-    width:fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: fit-content;
+    outline: none;
+
     &__border {
         position: relative;
         border-radius: 9999px;
-        background-color: #999;
+        background-color: $gray;
         border: none;
         height: 64px;
         width: 64px;
@@ -33,6 +44,38 @@
         position: absolute;
         border-radius: 9999px;
         border: 2px solid #fff;
-        background-color: #999;
+        background-color: $gray;
+    }
+
+    &__button {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        right: -0.15rem;
+        bottom: -0.15rem;
+        border: 2px solid #fff;
+        border-radius: 9999px;
+        background-color: #0b87e1;
+
+        * {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+        font-size: 1.5em;
+        text-align: center;
+            color: #fff;
+        }
+    }
+}
+
+.stories-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__label {
+        text-align: center;
     }
 }
