@@ -1,0 +1,21 @@
+$border: 1px solid #f4f4f4;
+
+section {
+    border-bottom: $border;
+}
+
+.tool-bar {
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &_bottom {
+        border-top: $border;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}

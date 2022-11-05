@@ -16,7 +16,7 @@ p,
 span,
 a {
   user-select: all;
-  color:$gray;
+  color: $gray;
 }
 
 ul {
@@ -39,4 +39,27 @@ ul {
   max-width: 768px;
   min-height: 100%;
   background-color: #fff;
+}
+
+.icon{
+  height:1.5rem;
+  width:1.5rem;
+}
+
+.dekstop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .dekstop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
 }

@@ -5,6 +5,7 @@ import { StoriesIcon } from "../components/UserIcon";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
 import "swiper/css";
+import { BottomToolBar, TopToolBar } from "../components/ToolBars";
 
 const stories = [];
 
@@ -15,15 +16,17 @@ for (let i = 0; i < 10 + Math.floor(Math.random() * 10); i++) {
 const HomePage = (props) => {
   return (
     <>
+      <TopToolBar />
       <StoriesCarousel />
       <Post />
+      <BottomToolBar />
     </>
   );
 };
 
 const StoriesCarousel = (props) => {
   return (
-    <div className="stories-carousel">
+    <section className="stories-carousel">
       <Swiper
         spaceBetween={5}
         slidesPerView={"auto"}
@@ -40,7 +43,7 @@ const StoriesCarousel = (props) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 
